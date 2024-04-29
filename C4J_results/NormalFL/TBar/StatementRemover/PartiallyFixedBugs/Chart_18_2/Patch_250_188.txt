@@ -1,0 +1,67 @@
+diff --git a/build/org/jfree/data/category/DefaultCategoryDataset.class b/build/org/jfree/data/category/DefaultCategoryDataset.class
+index 15556fe..9f1f336 100644
+Binary files a/build/org/jfree/data/category/DefaultCategoryDataset.class and b/build/org/jfree/data/category/DefaultCategoryDataset.class differ
+diff --git a/failing_tests b/failing_tests
+index 816ba16..935941d 100644
+--- a/failing_tests
++++ b/failing_tests
+@@ -1,47 +1,3 @@
+---- org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955
+-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+-	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+-	at java.util.ArrayList.set(ArrayList.java:450)
+-	at org.jfree.data.DefaultKeyedValues.setValue(DefaultKeyedValues.java:234)
+-	at org.jfree.data.DefaultKeyedValues2D.setValue(DefaultKeyedValues2D.java:337)
+-	at org.jfree.data.DefaultKeyedValues2D.addValue(DefaultKeyedValues2D.java:303)
+-	at org.jfree.data.category.DefaultCategoryDataset.addValue(DefaultCategoryDataset.java:218)
+-	at org.jfree.data.category.DefaultCategoryDataset.addValue(DefaultCategoryDataset.java:233)
+-	at org.jfree.data.category.junit.DefaultCategoryDatasetTests.testBug1835955(DefaultCategoryDatasetTests.java:350)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at junit.framework.TestCase.runTest(TestCase.java:176)
+-	at junit.framework.TestCase.runBare(TestCase.java:141)
+-	at junit.framework.TestResult$1.protect(TestResult.java:122)
+-	at junit.framework.TestResult.runProtected(TestResult.java:142)
+-	at junit.framework.TestResult.run(TestResult.java:125)
+-	at junit.framework.TestCase.run(TestCase.java:129)
+-	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+-	at junit.framework.TestSuite.run(TestSuite.java:250)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1484)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:872)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1972)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:824)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2277)
+-	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+-	at org.apache.tools.ant.Task.perform(Task.java:348)
+-	at org.apache.tools.ant.Target.execute(Target.java:392)
+-	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+-	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+-	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+-	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+-	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+-	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+-	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+-	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+-	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+ --- org.jfree.data.junit.DefaultKeyedValues2DTests::testRemoveColumnByKey$catena_0
+ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+ 	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+diff --git a/source/org/jfree/data/category/DefaultCategoryDataset.java b/source/org/jfree/data/category/DefaultCategoryDataset.java
+index 717b5e7..41b7b7e 100644
+--- a/source/org/jfree/data/category/DefaultCategoryDataset.java
++++ b/source/org/jfree/data/category/DefaultCategoryDataset.java
+@@ -347,7 +347,7 @@ public class DefaultCategoryDataset extends AbstractDataset
+      * @see #removeRow(Comparable)
+      */
+     public void removeColumn(Comparable columnKey) {
+-        this.data.removeColumn(columnKey);
++        
+         fireDatasetChanged();
+     }

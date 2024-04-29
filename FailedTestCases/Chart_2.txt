@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2a
+  - org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2b
+  - org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2c

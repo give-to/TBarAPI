@@ -1,0 +1,129 @@
+diff --git a/failing_tests b/failing_tests
+index b0659e84..0e74b6c7 100644
+--- a/failing_tests
++++ b/failing_tests
+@@ -1,48 +1,5 @@
+---- org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_tokyo_endOfYear$catena_0
+-org.joda.time.IllegalFieldValueException: Cannot parse "2 29": Value 29 for dayOfMonth must be in the range [1,28]
+-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+-	at org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)
+-	at org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+-	at org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:366)
+-	at org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:359)
+-	at org.joda.time.format.DateTimeFormatter.parseInto(DateTimeFormatter.java:715)
+-	at org.joda.time.format.TestDateTimeFormatter.testParseInto_monthDay_feb29_tokyo_endOfYear$catena_0(TestDateTimeFormatter.java:971)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at junit.framework.TestCase.runTest(TestCase.java:176)
+-	at junit.framework.TestCase.runBare(TestCase.java:141)
+-	at junit.framework.TestResult$1.protect(TestResult.java:122)
+-	at junit.framework.TestResult.runProtected(TestResult.java:142)
+-	at junit.framework.TestResult.run(TestResult.java:125)
+-	at junit.framework.TestCase.run(TestCase.java:129)
+-	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+-	at junit.framework.TestSuite.run(TestSuite.java:250)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1484)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:872)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1972)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:824)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2277)
+-	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+-	at org.apache.tools.ant.Task.perform(Task.java:348)
+-	at org.apache.tools.ant.Target.execute(Target.java:392)
+-	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+-	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+-	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+-	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+-	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+-	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+-	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+-	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+-	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+ --- org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_tokyo_endOfYear$catena_1
+-junit.framework.AssertionFailedError: expected:<2004-02-29T23:59:59.999+09:00> but was:<2004-12-31T23:59:59.999+09:00>
++junit.framework.AssertionFailedError: expected:<2004-02-29T23:59:59.999+09:00> but was:<2005-02-28T23:59:59.999+09:00>
+ 	at junit.framework.Assert.fail(Assert.java:57)
+ 	at junit.framework.Assert.failNotEquals(Assert.java:329)
+ 	at junit.framework.Assert.assertEquals(Assert.java:78)
+@@ -83,51 +40,8 @@ junit.framework.AssertionFailedError: expected:<2004-02-29T23:59:59.999+09:00> b
+ 	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+ 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+ 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+---- org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear$catena_0
+-org.joda.time.IllegalFieldValueException: Cannot parse "2 29": Value 29 for dayOfMonth must be in the range [1,28]
+-	at org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+-	at org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)
+-	at org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+-	at org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:366)
+-	at org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:359)
+-	at org.joda.time.format.DateTimeFormatter.parseInto(DateTimeFormatter.java:715)
+-	at org.joda.time.format.TestDateTimeFormatter.testParseInto_monthDay_feb29_newYork_startOfYear$catena_0(TestDateTimeFormatter.java:938)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at junit.framework.TestCase.runTest(TestCase.java:176)
+-	at junit.framework.TestCase.runBare(TestCase.java:141)
+-	at junit.framework.TestResult$1.protect(TestResult.java:122)
+-	at junit.framework.TestResult.runProtected(TestResult.java:142)
+-	at junit.framework.TestResult.run(TestResult.java:125)
+-	at junit.framework.TestCase.run(TestCase.java:129)
+-	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+-	at junit.framework.TestSuite.run(TestSuite.java:250)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1484)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:872)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1972)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:824)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2277)
+-	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+-	at org.apache.tools.ant.Task.perform(Task.java:348)
+-	at org.apache.tools.ant.Target.execute(Target.java:392)
+-	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+-	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+-	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+-	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+-	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+-	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+-	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+-	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+-	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+ --- org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear$catena_1
+-junit.framework.AssertionFailedError: expected:<2004-02-29T00:00:00.000-05:00> but was:<2004-01-01T00:00:00.000-05:00>
++junit.framework.AssertionFailedError: expected:<2004-02-29T00:00:00.000-05:00> but was:<2003-02-01T00:00:00.000-05:00>
+ 	at junit.framework.Assert.fail(Assert.java:57)
+ 	at junit.framework.Assert.failNotEquals(Assert.java:329)
+ 	at junit.framework.Assert.assertEquals(Assert.java:78)
+diff --git a/src/main/java/org/joda/time/format/DateTimeParserBucket.java b/src/main/java/org/joda/time/format/DateTimeParserBucket.java
+index 93dfaa78..00bb95f2 100644
+--- a/src/main/java/org/joda/time/format/DateTimeParserBucket.java
++++ b/src/main/java/org/joda/time/format/DateTimeParserBucket.java
+@@ -374,7 +374,7 @@ public class DateTimeParserBucket {
+             if (text != null) {
+                 e.prependMessage("Cannot parse \"" + text + '"');
+             }
+-            throw e;
++            
+         }
+         
+         if (iOffset != null) {
+diff --git a/target/classes/org/joda/time/format/DateTimeParserBucket$SavedField.class b/target/classes/org/joda/time/format/DateTimeParserBucket$SavedField.class
+index 9573f630..5f9b68bc 100644
+Binary files a/target/classes/org/joda/time/format/DateTimeParserBucket$SavedField.class and b/target/classes/org/joda/time/format/DateTimeParserBucket$SavedField.class differ
+diff --git a/target/classes/org/joda/time/format/DateTimeParserBucket$SavedState.class b/target/classes/org/joda/time/format/DateTimeParserBucket$SavedState.class
+index de2ae021..bb998aca 100644
+Binary files a/target/classes/org/joda/time/format/DateTimeParserBucket$SavedState.class and b/target/classes/org/joda/time/format/DateTimeParserBucket$SavedState.class differ
+diff --git a/target/classes/org/joda/time/format/DateTimeParserBucket.class b/target/classes/org/joda/time/format/DateTimeParserBucket.class
+index cfecca17..fa2cfcf5 100644
+Binary files a/target/classes/org/joda/time/format/DateTimeParserBucket.class and b/target/classes/org/joda/time/format/DateTimeParserBucket.class differ

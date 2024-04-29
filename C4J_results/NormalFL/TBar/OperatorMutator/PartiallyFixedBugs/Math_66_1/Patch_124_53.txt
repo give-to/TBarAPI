@@ -1,0 +1,125 @@
+diff --git a/failing_tests b/failing_tests
+index fb71deeed..dd916fa98 100644
+--- a/failing_tests
++++ b/failing_tests
+@@ -1,95 +1,3 @@
+---- org.apache.commons.math.distribution.NormalDistributionTest::testSampling
+-junit.framework.AssertionFailedError: Chisquare test failed p-value = 8.572743170136565E-4 chisquare statistic = 16.592. 
+-value	expected	observed
+-1	250		263
+-2	250		265
+-3	250		277
+-4	250		195
+-This test can fail randomly due to sampling error with probability 0.001.
+-	at junit.framework.Assert.fail(Assert.java:57)
+-	at org.apache.commons.math.TestUtils.assertChiSquareAccept(TestUtils.java:404)
+-	at org.apache.commons.math.TestUtils.assertChiSquareAccept(TestUtils.java:455)
+-	at org.apache.commons.math.distribution.ContinuousDistributionAbstractTest.testSampling(ContinuousDistributionAbstractTest.java:274)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at junit.framework.TestCase.runTest(TestCase.java:176)
+-	at junit.framework.TestCase.runBare(TestCase.java:141)
+-	at junit.framework.TestResult$1.protect(TestResult.java:122)
+-	at junit.framework.TestResult.runProtected(TestResult.java:142)
+-	at junit.framework.TestResult.run(TestResult.java:125)
+-	at junit.framework.TestCase.run(TestCase.java:129)
+-	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+-	at junit.framework.TestSuite.run(TestSuite.java:250)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1484)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:872)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1972)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:824)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2277)
+-	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+-	at org.apache.tools.ant.Task.perform(Task.java:348)
+-	at org.apache.tools.ant.Target.execute(Target.java:392)
+-	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+-	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+-	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+-	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+-	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+-	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+-	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+-	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+-	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+---- org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest::testQuinticMin$catena_10
+-junit.framework.AssertionFailedError
+-	at org.junit.Assert.fail(Assert.java:86)
+-	at org.junit.Assert.assertTrue(Assert.java:41)
+-	at org.junit.Assert.assertTrue(Assert.java:52)
+-	at org.apache.commons.math.optimization.MultiStartUnivariateRealOptimizerTest.testQuinticMin$catena_10(MultiStartUnivariateRealOptimizerTest.java:157)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+-	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1484)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:872)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1972)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute1(JUnitTask.java:824)
+-	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2277)
+-	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+-	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+-	at java.lang.reflect.Method.invoke(Method.java:498)
+-	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+-	at org.apache.tools.ant.Task.perform(Task.java:348)
+-	at org.apache.tools.ant.Target.execute(Target.java:392)
+-	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+-	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+-	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+-	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+-	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+-	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+-	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+-	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+-	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+ --- org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testSinMin$catena_3
+ junit.framework.AssertionFailedError: expected:<4.71238898038469> but was:<4.71238897901431>
+ 	at org.junit.Assert.fail(Assert.java:88)
+@@ -138,7 +46,7 @@ junit.framework.AssertionFailedError: expected:<4.71238898038469> but was:<4.712
+ 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+ 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+ --- org.apache.commons.math.optimization.univariate.BrentOptimizerTest::testSinMin$catena_5
+-junit.framework.AssertionFailedError: expected:<4.71238898038469> but was:<4.712388980093983>
++junit.framework.AssertionFailedError: expected:<4.71238898038469> but was:<4.7123889805240164>
+ 	at org.junit.Assert.fail(Assert.java:88)
+ 	at org.junit.Assert.failNotEquals(Assert.java:743)
+ 	at org.junit.Assert.assertEquals(Assert.java:494)
+diff --git a/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java b/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java
+index 926541536..a4391494b 100644
+--- a/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java
++++ b/src/main/java/org/apache/commons/math/optimization/univariate/BrentOptimizer.java
+@@ -63,7 +63,7 @@ public class BrentOptimizer extends AbstractUnivariateRealOptimizer {
+                         getRelativeAccuracy(), getAbsoluteAccuracy());
+     }
+     public double optimize(final UnivariateRealFunction f, final GoalType goalType, final double min, final double max) throws MaxIterationsExceededException, FunctionEvaluationException {
+-        return optimize(f, goalType, min, max, min + GOLDEN_SECTION * (max - min));
++        return optimize(f, goalType, min, max, (min + GOLDEN_SECTION) * (max - min));
+     }
+ 
+     /**
+diff --git a/target/classes/org/apache/commons/math/optimization/univariate/BrentOptimizer.class b/target/classes/org/apache/commons/math/optimization/univariate/BrentOptimizer.class
+index 040bda1db..7663e51bd 100644
+Binary files a/target/classes/org/apache/commons/math/optimization/univariate/BrentOptimizer.class and b/target/classes/org/apache/commons/math/optimization/univariate/BrentOptimizer.class differ

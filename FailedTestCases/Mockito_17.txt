@@ -1,0 +1,17 @@
+Failing tests: 16
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldAllMockAndSerializableValueToBeSerialized
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldAllowMockAndBooleanValueToSerializable
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldSerializeMethodCallsUsingAnyStringMatcher
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces_a
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldBeSerializeAndHaveExtraInterfaces_b
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldAllowMockToBeSerializable
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldVerifyCalledNTimesForSerializedMock
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldStubEvenIfSomeMethodsCalledAfterSerialization_a
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldStubEvenIfSomeMethodsCalledAfterSerialization_b
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldVerifyCallOrderForSerializedMock_a
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldVerifyCallOrderForSerializedMock_b
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldVerifyEvenIfSomeMethodsCalledAfterSerialization
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldAllowMockAndStringValueToBeSerializable
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldSerializeMethodCallWithParametersThatAreSerializable
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldSerializeWithStubbingCallback
+  - org.mockitousage.basicapi.MocksSerializationTest::shouldRememberInteractionsForSerializedMock
