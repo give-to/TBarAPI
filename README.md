@@ -97,15 +97,11 @@ After finishing the repair, the results are in folders: `OUTPUT`.
 
  ```powershell
   |--- README.md               :  user guidance
-  |--- D4J                     :  Defects4J information
-  |--- FailedTestCases         :  Failed test cases of each Defects4J bug
-  |--- lib                     :  GZoltar jar files
-  |--- Results                 :  Generated patches
-  |------ FixPatterns          :  Bugs fixed by each fix pattern
-  |------ PerfectFL            :  Bugs fixed with perfect fault localization configuration
-  |------ NormalFL             :  Bugs fixed with normal fault localization configuration
+  |--- C4J_location            :  Bug positions localized with GZoltar of CatenaD4J bugs
   |--- C4J_results             :  Generated patches of CatenaD4J bugs
+  |--- D4J                     :  Defects4J information
+  |--- Docker                  :  Dockerfile
+  |--- Results                 :  Generated patches of Defects4J bugs
   |--- src                     :  source code
-  |--- SuspiciousCodePositions :  Bug positions localized with GZoltar
   |--- target                  :  binary code
  ```
