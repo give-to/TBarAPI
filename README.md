@@ -77,6 +77,8 @@ python3 runTBarForCatenaD4J.py 0 0 /TBarAPI test.txt /defects4j
 
 After finishing the repair, the results are in folders: `OUTPUT`.
 
+Note: If you do not get any results, you can go to `/tbar_log/TBar.log` for more information.
+
 
 
 ## 7. Experiment Reproduction
