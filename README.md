@@ -60,6 +60,7 @@ At the root of this container, we clone the TBar repository.
 ```shell
 cd /
 git clone https://github.com/give-to/TBarAPI.git
+cd TBarAPI/ && chmod +x NormalFLTBarRunner.sh
 ```
 
 
@@ -69,7 +70,7 @@ git clone https://github.com/give-to/TBarAPI.git
 It takes several minutes to quickly test your installation. (**Note:** In quick test, the `ochiai.ranking.txt` in Chart_18_2 only contains one location! )
 
 ```shell
-cd /TBarAPI/ && cp C4J_location/105SampleBugsResult/Chart_18_2/short.txt C4J_location/105SampleBugsResult/Chart_18_2/ochiai.ranking.txt
+cp C4J_location/105SampleBugsResult/Chart_18_2/short.txt C4J_location/105SampleBugsResult/Chart_18_2/ochiai.ranking.txt
 # Test your environment
 python3 runTBarForCatenaD4J.py 0 0 /TBarAPI test.txt /defects4j
 ```
