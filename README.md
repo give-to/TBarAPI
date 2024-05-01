@@ -60,7 +60,7 @@ At the root of this container, we clone the TBar repository.
 ```shell
 cd /
 git clone https://github.com/give-to/TBarAPI.git
-cd TBarAPI/ && chmod +x NormalFLTBarRunner.sh
+cd TBarAPI/ && chmod +x *
 ```
 
 
