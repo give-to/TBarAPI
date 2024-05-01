@@ -1,6 +1,6 @@
 
 # TBar
-This repository is used to replicate the experiments of article **"Towards Effective Multi-Hunk Bug Repair: Detecting, Creating, Evaluating, and Understanding Indivisible Bugs"** on TBar. 
+This repository is used to replicate the experiments of article **"Detecting, Creating, Repairing, and Understanding Indivisible Multi-Hunk Bugs"** on TBar. 
 
 If you want to learn more about TBar, please follow the original repository of [TBar](https://github.com/TruX-DTF/TBar).
 
